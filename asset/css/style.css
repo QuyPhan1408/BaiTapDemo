@@ -189,31 +189,34 @@ header {
   font-size: 1rem;
 }
 
-section {
+.section {
   margin-top: 4rem;
 }
 
-section .section-head {
+.section section {
+  margin-bottom: 5.56rem;
+}
+
+.section section .section-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 3.75rem;
 }
 
-section .section-head .title {
+.section section .section-head .title {
   width: 370px;
   margin-right: 2rem;
   font-size: 2.25rem;
   font-weight: bold;
 }
 
-section .section-head .descript {
+.section section .section-head .descript {
   font-size: 1.125rem;
   width: 843px;
 }
 
-section .card {
-  margin-bottom: 8.56rem;
+.section section .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,42 +225,52 @@ section .card {
           justify-content: space-between;
 }
 
-section .card .card-item .card-content {
-  margin-top: 1.7rem;
-}
-
-section .card .card-item .card-content .title {
+.section section .card .card-item .card-content .title-three {
   font-size: 1.25rem;
   font-weight: bold;
-  height: 2.25rem;
+  margin-top: 1.7rem;
+  height: 2.34rem;
 }
 
-section .card .card-item .card-content .descript {
+.section section .card .card-item .card-content .descript-three {
   font-size: 0.875rem;
   margin-top: 0.5rem;
   padding: 0.25rem 0;
   height: 3.75rem;
 }
 
-section .card .card-item img {
+.section section .card .card-item .card-content .title-four {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 1.25rem;
+  height: 2.25rem;
+}
+
+.section section .card .card-item .card-content .descript-four {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  height: 3.75rem;
+}
+
+.section section .card .card-item img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
 
-section .card .card-item + .card-item {
+.section section .card .card-item + .card-item {
   margin-left: 30px;
 }
 
-section .card .item-two {
+.section section .card .item-two {
   width: 50%;
 }
 
-section .card .item-four {
+.section section .card .item-four {
   width: 25%;
 }
 
-section .card .item-three {
+.section section .card .item-three {
   width: calc(100% / 3);
   height: 390px;
 }
@@ -265,6 +278,7 @@ section .card .item-three {
 .footer {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  height: 232px;
 }
 
 .footer-top {
@@ -281,30 +295,97 @@ section .card .item-three {
   width: 25%;
 }
 
+.footer-top .top h1 {
+  height: 1.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.56rem;
+}
+
+.footer-top .top ul {
+  list-style-type: none;
+  font-size: 0.875rem;
+  list-style: none;
+}
+
+.footer-top .top ul li {
+  margin: 0.5rem 0;
+}
+
 .footer-top .top + .top {
   margin-left: 3.68rem;
 }
 
-.footer-top .about-us ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.footer-top .about-us {
+  width: 249px;
 }
 
-.footer-top .payment .img {
+.footer-top .payment .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+.footer-top .payment .grid-container .grid {
+  margin-left: 1.125rem;
+  margin-bottom: 0.6875rem;
+}
+
+.footer-top .payment .grid-container .grid img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 3.375rem;
+  height: 2rem;
+  aspect-ratio: 2/3;
+}
+
+.footer-top .contact-us {
+  width: 270px;
+}
+
+.footer-top .support {
+  width: 270px;
+}
+
+.footer-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin: 2.5rem;
+  height: 5.5rem;
 }
 
-.footer-top .payment .img img {
+.footer-bottom .left .title {
+  height: 1.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.6875rem;
+}
+
+.footer-bottom .left .content p {
+  margin-bottom: 0.3125rem;
+  height: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.footer-bottom .right .img img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 25%;
+  width: 7.56rem;
+  height: 2.875rem;
+}
+
+.footer-bottom .right p {
+  height: 1.875rem;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
