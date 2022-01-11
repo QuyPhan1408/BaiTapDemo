@@ -1,0 +1,249 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1236px;
+    margin: auto;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &-left {
+        display: flex;
+        list-style-type: none;
+        li {
+            display: flex;
+            align-items: center;
+            a {
+                display: block;
+                font-size: 16px;
+                padding : 0.75rem;
+                font-weight: bold;
+                color:black;
+            }
+            a:hover {
+                background-color: blue;
+            }
+        }
+
+        li + li {
+            margin-left: 2.5rem;
+        } 
+        .active {
+            background-color: black;
+            a{
+                color:white;
+            }
+        }
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        &-search {
+            display: flex;
+            margin-right: 2.66rem;
+            input {
+                border:none;
+                border-bottom: 1px solid black;
+                padding-bottom: 0.3rem;
+                font-size: 0.75rem;
+            }
+            a{
+                position: relative;
+                right: 1rem;
+            }
+        }
+        &-account {
+            display: flex;
+            margin-right: 2.5rem;
+            .account-image {
+                margin-right: 0.625rem;
+            }
+        }
+        &-cart {
+            display: flex;
+            position: relative;
+            .cart-number{
+                position: absolute;
+                right: -0.5rem;
+                // top: 3rem;
+                z-index: 1;
+                background-color: black;
+                color: white;
+                width: 0.9rem;
+                height: 0.9rem;
+                border-radius: 50%;
+                text-align: center;
+            }
+            .cart-icon {
+                width:1.3rem;
+                height: 1.15rem;
+                z-index: 0;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            
+        }
+    }
+}
+
+.banner {
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-food-seasoning-food-banner-image_169169.jpg");
+    background-repeat: no-repeat;
+    height: 25.625rem;
+    background-size: cover;
+    object-fit: cover;
+    margin: auto;
+    background-position: center;
+    margin-top: 1.3rem ;
+    width:1384px
+    
+}
+.banner-item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .banner-content {
+        margin: 6.56rem 0;
+        width: 30rem;
+        .title {
+            font-size: 2.25rem;
+            font-weight: bold;
+            line-height: 48px;
+            color:black;
+           
+        }
+        .content{
+            margin-top: 0.8rem;
+            margin-bottom: 1.93rem;
+            font-size: 1.125rem;
+        }
+        button {
+            width: 8.5rem;
+            padding: 0.75rem 0;
+            border:none;
+            color: white;
+            background-color: black;
+            font-size: 1rem;
+        }
+
+    }
+}
+section {
+    margin-top: 4rem;
+    .section-head {
+        display: flex;
+        margin-bottom: 3.75rem;
+        .title{
+            width: 370px;
+            margin-right: 2rem;
+            font-size: 2.25rem;
+            font-weight: bold;
+        }
+        .descript {
+            font-size: 1.125rem;
+            width: 843px;
+        }
+    }
+    .card {
+        margin-bottom: 8.56rem;
+        display: flex;
+        justify-content: space-between;
+        .card-item{
+           
+            .card-content {
+                margin-top: 1.7rem;
+                .title {
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    height: 2.25rem;
+                }
+                .descript {
+                    font-size: 0.875rem;
+                    margin-top: 0.5rem;
+                    padding: 0.25rem 0;
+                    height: 3.75rem;
+                }
+            }
+            img{
+                object-fit: cover;
+                width: 100%;
+
+            }
+        }
+        .card-item + .card-item {
+            margin-left: 30px;
+        }
+        .item-two {
+            width: 50%;
+        }
+        .item-four {
+            width: 25%;
+        }
+        .item-three {
+            width:calc(100% / 3);
+            height: 390px;
+        }
+        
+    }
+
+}
+// footer
+.footer {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+.footer-top {
+    margin: 2.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    .top{
+        width: 25%;
+    }
+    .top + .top {
+        margin-left: 3.68rem;
+    }
+    .about-us {
+        h1{
+
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding:0;
+        }
+    }
+    .payment {
+        .img {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            img {
+                object-fit: cover;
+                width: 25%;
+            }
+            img + img {
+                // margin-left: 0.5rem;
+            }
+        }
+
+    }
+}
